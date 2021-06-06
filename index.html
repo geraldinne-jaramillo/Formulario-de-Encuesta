@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta
+      
+    </title>
+</head>
+<body>
+    
+    <div class="background">        
+    <container>
+        <header class="header">
+            <h1 id="title" class="text-center">Slack-Geek</h1>
+            <p id="description">
+              Haciendo este formulario, nos ayudas a mejorar  <br> y conocerte mejor:)
+            </p>
+        </header>
+
+          <form action="" id="survey-form">
+              <div class="container"> 
+                
+              <label for="name" id="name-label" class="form-group">Nombre</label> 
+                <br> 
+              <input id="name" type="text"  placeholder="Ingrese su nombre" required>
+                <br>
+
+              <label for="lastname" id="lastname-label" class="form-group">Apellido</label> 
+                <br> 
+              <input id="lastname" type="text" required placeholder="Ingrese su apellido">
+                <br>
+
+              <label for="email" id="email-label" class="form-group">Email</label> 
+                <br> 
+              <input id="email" type="email" required placeholder="Ingrese su email">
+                <br>
+
+              <label for="number" id="number-label" class="form-group">Edad: (Opcional)</label> 
+                <br> 
+              <input id="number" type="number" min="10" max="100" placeholder="Ingrese su edad">
+                <br>
+
+                <p>¿Con qué frecuencia usas la plataforma de Slack?</p> 
+      <select id="dropdown" name="role" class="form-control" required>
+        <option  class="input" selected value>Siempre</option>
+        <option value="student">Casi siempre</option>
+        <option value="job">A veces </option>
+        <option value="learner">Pocas veces</option>
+        <option value="preferNo">Nunca</option>
+        <option value="other">Casi nunca</option>
+      </select>
+      
+      <br>
+
+      <div class="form-group"> 
+        <p>¿Recomendarías Slack a un familiar o amigo?</p>
+        <label class="form-group" >
+          <input
+            name="recommend-select"
+            value="Sí"
+            type="radio"
+           />Sí</label>
+
+        <label class="form-group">
+          <input
+            name="recommend-select"
+            value="No"
+            type="radio"
+          />No</label>
+      </div>
+           <br>
+      <br>
+
+      <div id="checkbox">
+     <label for="select" id="select">Le gustaría que se tuvieran charlas de:</label>
+         <br>
+        <br>
+
+        <input type="checkbox" value="Back-End" name="Back-End">Back-End<br>
+
+        <input type="checkbox" value="Front-End" name="Front-End">Front-End<br>
+    
+        <input type="checkbox" value="JavaScript" name="JavaScript">JavaScript<br>
+
+        <input type="checkbox" value="Retos" name="Retos">Retos aleatorios<br>
+
+        <input type="checkbox" value="Conversatorios" name="Conversatorios">Conversatorios vocacionales<br>
+    
+       
+    
+      </p>
+    </div>
+    
+     
+
+            <br>
+
+              <label for="text-tarea" id="label" class="form-group">Déjame tu opinión o sugerencia</label> 
+              <br> 
+              <br> 
+              <textarea id="input" name="text-tarea" id="" cols="30" rows="10" placeholder="Ingresa tu comentario"></textarea>
+                <br>
+
+                
+            <div class="button"> 
+                  <button class="button" type="submit" id="submit" value="Enviar-datos">Enviar datos</button>
+            </div>
+          </form>
+        </div>
+  </container>
+
+    </div>
+ 
+    
+</body>
+</html>
